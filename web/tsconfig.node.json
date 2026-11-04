@@ -1,0 +1,17 @@
+{
+  // Node-side code: the Vite config (with its dev API bridge), the Vercel functions and scripts.
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2023"],
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "allowJs": true,
+    "checkJs": true,
+    "strict": true,
+    "noImplicitAny": false,
+    "skipLibCheck": true,
+    "noEmit": true,
+    "types": ["node"]
+  },
+  "include": ["vite.config.ts", "api", "scripts/setup-db.mjs"]
+}
