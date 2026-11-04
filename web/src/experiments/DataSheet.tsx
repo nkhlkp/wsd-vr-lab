@@ -23,8 +23,12 @@ function FatigueTable({ label, readings }: { label: string; readings: number[] }
   )
 }
 
-/** The report-style write-up of one run: fatigue readings, trial table, curve and analysis. */
-export default function DataSheet({ record }: { record: ExperimentRecord }) {
+/**
+ * The report-style write-up of one run: fatigue readings, trial table and curve. The worked
+ * answers to the leading questions are only shown to the professor (`showQuestions`); students
+ * answer them in their own report.
+ */
+export default function DataSheet({ record, showQuestions = false }: { record: ExperimentRecord; showQuestions?: boolean }) {
   const { metric, trials, fatigueBefore, fatigueAfter } = record
   const s = summarize(trials, metric, fatigueBefore, fatigueAfter)
   const def = getExperiment(record.experimentId)
@@ -92,7 +96,7 @@ export default function DataSheet({ record }: { record: ExperimentRecord }) {
         )}
       </section>
 
-      <section>
+      {showQuestions && <section>
         <h3>Leading questions</h3>
         <ol className="questions">
           <li>
@@ -143,7 +147,7 @@ export default function DataSheet({ record }: { record: ExperimentRecord }) {
             </ul>
           </li>
         </ol>
-      </section>
+      </section>}
       </>}
     </div>
   )

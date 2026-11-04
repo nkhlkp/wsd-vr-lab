@@ -68,7 +68,7 @@ export default function Results() {
           <button className="btn secondary" onClick={() => window.print()}>Print / save as PDF</button>
         </div>
         <h2>{who(open)}</h2>
-        <DataSheet record={open} />
+        <DataSheet record={open} showQuestions />
       </section>
     )
   }
