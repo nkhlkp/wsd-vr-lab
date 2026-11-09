@@ -85,12 +85,12 @@ export const EXPERIMENTS: ExperimentDef[] = [
     id: 'eye-fatigue',
     title: 'Eye Fatigue Tester',
     summary:
-      'Take a set of eye-fatigue readings on the flicker-fusion reader: stop the lamp the moment its flicker disappears.',
+      'Take a set of eye-fatigue readings on the flicker-fusion reader: the lamp starts steady, and you press the moment it first begins to flicker.',
     stationObject: 'Eye Test Table',
     status: 'ready',
     analysis: {
-      arrangement: 'Viewing distance from the lamp and the room lighting change the frequency at which the flicker seems to stop.',
-      method: 'Looking steadily at the lamp and stopping as soon as it looks steady gives consistent readings.',
+      arrangement: 'Viewing distance from the lamp and the room lighting change the frequency at which the flicker is first noticed.',
+      method: 'Looking steadily at the lamp and pressing as soon as it starts to flicker gives consistent readings.',
       other: 'Tiredness, screen time and poor sleep lower the fusion frequency, i.e. raise the fatigue value.',
       technique: 'Rest the eyes before the test and keep the same head position for every reading.',
     },

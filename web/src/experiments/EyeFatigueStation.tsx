@@ -73,7 +73,7 @@ export default function EyeFatigueStation({ onExit, onShowRecords }: { onExit: (
               <h3>Procedure</h3>
               <ol>
                 <li>Sit in front of the reader and look steadily at the lamp through the viewing hood.</li>
-                <li>Start the lamp. Its frequency rises from a visible flicker; press the stop button the moment the light looks steady.</li>
+                <li>Start the lamp. It begins steady and its frequency falls; press the stop button the moment the light first starts to flicker.</li>
                 <li>The dial reading (Hz) is noted. Fatigue value = 60 − reading: a lower reading means more tired eyes.</li>
                 <li>Take {READINGS_PER_TEST} readings and average them.</li>
               </ol>

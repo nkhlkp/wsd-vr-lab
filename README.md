@@ -31,8 +31,8 @@ curve (fitted y = a·nᵇ, learning rate = 2ᵇ) and the three leading questions
 | `Table 3` | Match Board Assembly | Pick matches from the tray and fill all 30 holes of a sloped board | Time to insert 30 matches |
 
 The eye-fatigue reader is simulated: a normal 60 Hz screen cannot show true flicker-fusion
-frequencies, so the lamp's flicker fades as the dial frequency rises and the subject stops it
-when it looks steady. Fatigue value = 60 − reading, as in the report.
+frequencies, so the lamp starts steady, a visible flicker fades in as the dial frequency falls,
+and the subject presses Space the moment the flicker first appears. Fatigue value = 60 − reading, as in the report.
 
 Completed runs are saved under **My Records** (in the student's account) and can be
 downloaded as CSV or printed / saved as PDF.

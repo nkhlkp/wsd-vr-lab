@@ -55,7 +55,7 @@ export default function DataSheet({ record, showQuestions = false }: { record: E
           </div>
           <p className="small muted">
             Readings are from the simulated eye-fatigue reader (the flicker frequency, in Hz, at which
-            the lamp first looked steady).
+            the lamp first started to flicker).
           </p>
         </section>
       )}
